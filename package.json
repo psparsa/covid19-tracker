@@ -1,0 +1,51 @@
+{
+  "name": "covid19-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.67",
+    "@types/react": "^16.9.52",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-select": "^3.0.22",
+    "@types/styled-components": "^5.1.4",
+    "axios": "^0.20.0",
+    "chart.js": "^2.9.4",
+    "i18next": "^19.8.2",
+    "react": "^16.14.0",
+    "react-chartjs-2": "^2.10.0",
+    "react-dom": "^16.14.0",
+    "react-i18next": "^11.7.3",
+    "react-scripts": "3.4.3",
+    "react-select": "^3.1.0",
+    "styled-components": "^5.2.0",
+    "sweetalert2": "^10.11.1",
+    "swr": "^0.3.5",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start": "BROWSER=NONE react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
