@@ -2,6 +2,7 @@ import React from "react";
 import SelectCountry from "./pages/SelectCountry/SelectCountry";
 import MainPage from "./pages/MainPage/MainPage";
 import { useTranslation } from "react-i18next";
+import Loading from "./pages/Loading/Loading";
 
 function App() {
   const localStorage = window.localStorage.getItem("data");
@@ -20,7 +21,7 @@ function App() {
     setLoading(false);
   }, [localStorage, i18n]);
 
-  if (loading) return <h1>Loading...</h1>;
+  if (loading) return <Loading />;
   if (hasInit) return <MainPage />;
   return <SelectCountry setHasInit={setHasInit} />;
 }

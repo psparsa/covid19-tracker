@@ -24,6 +24,7 @@ import getChartObject from "./getChartObject";
 import { useTranslation } from "react-i18next";
 
 import kFormatter from "../../hooksANDtools/kFormatter";
+import Loading from "../Loading/Loading";
 
 //reducer
 import initialState from "./reducer/reducerInitialState";
@@ -61,7 +62,7 @@ function MainPage() {
     });
   }, [country]);
 
-  if (isLoading) return <h1>Loading...</h1>;
+  if (isLoading) return <Loading />;
   return (
     <Container style={{ backgroundImage: "url('/images/background.png')" }}>
       <GradientWallpaper>

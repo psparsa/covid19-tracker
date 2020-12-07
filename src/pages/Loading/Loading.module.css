@@ -1,0 +1,56 @@
+.LoadingContent {
+  width: 250px;
+  height: 400px;
+  background: linear-gradient(
+    50deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 9, 75, 0.7) 0%,
+    rgba(121, 9, 75, 0.7) 10%,
+    rgba(0, 138, 255, 0.8) 100%
+  );
+  border: solid 1px black;
+  box-shadow: -5px 5px 30px rgb(0, 0, 0), 5px -5px 30px rgb(0, 0, 0);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.LoadingContent_Image {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoadingImage {
+  width: 100%;
+}
+
+.LoadingContent_Text {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.LoadingText {
+  font-size: 2rem;
+  animation: TextAnimation 5s ease infinite;
+}
+
+@keyframes TextAnimation {
+  0% {
+    color: black;
+    text-shadow: 3px 3px 12px rgb(255, 0, 106), -3px -3px 12px rgb(255, 0, 106);
+  }
+  50% {
+    color: rgb(255, 0, 106);
+    text-shadow: 3px 3px 12px black, -3px -3px 12px black;
+  }
+  100% {
+    color: black;
+    text-shadow: 3px 3px 12px rgb(255, 0, 106), -3px -3px 12px rgb(255, 0, 106);
+  }
+}
